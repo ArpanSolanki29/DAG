@@ -1,14 +1,13 @@
-import { ReactFlowProvider } from './additional-components';
-import './App.css';
-import Canvas from './Canvas';
-import SideBar from './SideBar';
+import { ReactFlowProvider } from "./additional-components";
+import "./App.css";
+import Canvas from "./Canvas";
 
 function App() {
   return (
     <div className="dndflow">
       <ReactFlowProvider>
         <div className="reactflow-wrapper">
-          <Canvas/>
+          <Canvas />
         </div>
       </ReactFlowProvider>
     </div>
