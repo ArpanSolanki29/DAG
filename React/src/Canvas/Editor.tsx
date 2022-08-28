@@ -38,13 +38,11 @@ const Editor = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="648px"
-        // style="bbackground-size: 54px 54px; background-position: -27px -27px; width: 100%; height: 648px; user-select: none; min-width: 750px;"
-        viewBox="0 0 100 100"
         style={{
           backgroundColor: "salmon",
           backgroundPosition: "-27px -27px",
           width: "100%",
-          height: "648px",
+          height: "100%",
           userSelect: "none",
           minWidth: "750px",
         }}

@@ -6,7 +6,7 @@ const CreateNode = (kind: string, location: DOMPoint): Node => {
     id: uuidv4(),
     kind: kind,
     x: location?.x ?? 0,
-    y: location?.x ?? 0,
+    y: location?.y ?? 0,
   };
 };
 
