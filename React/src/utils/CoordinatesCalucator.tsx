@@ -15,7 +15,7 @@ export const inputCirclesCoordinates = (props: Node): Position => {
   return { x: props.x, y: breadth };
 };
 
-export const oututCirclesCoordinates = (props: Node): Position => {
+export const outputCirclesCoordinates = (props: Node): Position => {
   let length: number = props.x + 30;
   return { x: length, y: props.y + 5 };
 };

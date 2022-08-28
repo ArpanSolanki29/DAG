@@ -4,11 +4,9 @@ import Canvas from "./Canvas";
 
 function App() {
   return (
-    <div className="dndflow">
+    <div className="dndflow" style={{ height: "100%" }}>
       <ReactFlowProvider>
-        <div className="reactflow-wrapper">
-          <Canvas />
-        </div>
+        <Canvas />
       </ReactFlowProvider>
     </div>
   );

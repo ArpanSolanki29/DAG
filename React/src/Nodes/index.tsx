@@ -3,7 +3,13 @@ import { Node } from "../store/state";
 import NodeDragBehavior from "../utils/DragBehavior/NodeDragBehavior";
 import { select } from "d3-selection";
 import { DragBehavior } from "d3-drag";
-import { CalculateNodeCoordinates } from "../utils/CoordinatesCalucator";
+import {
+  CalculateNodeCoordinates,
+  inputCirclesCoordinates,
+  oututCirclesCoordinates,
+} from "../utils/CoordinatesCalucator";
+import NodeInput from "./input";
+import NodeOutput from "./output";
 
 const GraphNode = (props: Node) => {
   const nodeDrag: DragBehavior<SVGElement, any, any> = useMemo(() => {
@@ -18,16 +24,22 @@ const GraphNode = (props: Node) => {
   }, []);
 
   return (
-    // <g className="node" ref={nodeRef}>
-    <path
-      className="MainRectangle"
-      d={CalculateNodeCoordinates(props)}
-      style={{ fill: "red" }}
-      ref={nodeRef}
-    />
-    // <NodeInput coordinates={inputCirclesCoordinates}></NodeInput>
-    // <NodeOutput coordinates={oututCirclesCoordinates}></NodeOutput>
-    // </g>
+    <>
+      <div
+        id="rectangle"
+        className="NodeRectangle"
+        style={{
+          width: "150px",
+          height: "50px",
+          top: props.y,
+          left: props.x,
+          position: "absolute",
+          backgroundColor: "lightsalmon",
+        }}
+      />
+      {/* <NodeInput coordinates={inputCirclesCoordinates()} /> */}
+      {/* <NodeOutput coordinates={outputCirclesCoordinates()} /> */}
+    </>
   );
 };
 
