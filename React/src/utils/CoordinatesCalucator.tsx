@@ -1,8 +1,8 @@
 import { Node, Position } from "../store/state";
 
 export const CalculateNodeCoordinates = (props: Position): string => {
-  const length: number = props.x + 30;
-  const breadth: number = props.y + 10;
+  const length: number = props.x + 150;
+  const breadth: number = props.y + 50;
 
   const rectPath: string = `M ${props.x},${props.y} 
 		${length},${props.y} ${length},${breadth} 
@@ -11,11 +11,11 @@ export const CalculateNodeCoordinates = (props: Position): string => {
 };
 
 export const inputCirclesCoordinates = (props: Node): Position => {
-  let breadth: number = props.y + 5;
+  let breadth: number = props.y + 25;
   return { x: props.x, y: breadth };
 };
 
-export const oututCirclesCoordinates = (props: Node): Position => {
-  let length: number = props.x + 30;
-  return { x: length, y: props.y + 5 };
+export const outputCirclesCoordinates = (props: Node): Position => {
+  let length: number = props.x + 150;
+  return { x: length, y: props.y + 25 };
 };

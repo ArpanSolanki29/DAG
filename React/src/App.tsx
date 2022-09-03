@@ -4,9 +4,11 @@ import Canvas from "./Canvas";
 
 function App() {
   return (
-    <ReactFlowProvider>
-      <Canvas />
-    </ReactFlowProvider>
+    <div className="dndflow">
+      <ReactFlowProvider>
+        <Canvas />
+      </ReactFlowProvider>
+    </div>
   );
 }
 

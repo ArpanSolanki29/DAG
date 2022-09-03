@@ -7,9 +7,9 @@ const NodeInput = (props: { coordinates: Position }) => {
       className="InputCircle"
       cx={props.coordinates.x}
       cy={props.coordinates.y}
-      r="1"
+      r="4"
       stroke="black"
-      strokeWidth="0.25"
+      strokeWidth="1"
       fill="white"
     />
   );
